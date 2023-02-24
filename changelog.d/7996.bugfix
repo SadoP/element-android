@@ -1,0 +1,1 @@
+Changes ´Lifecycle.State.RESUMED´ to ´Lifecycle.State.CREATED´ in ´observeViewEvents´ which fixes widgets not loading
