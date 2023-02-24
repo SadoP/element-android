@@ -279,7 +279,7 @@ abstract class VectorBaseFragment<VB : ViewBinding> : Fragment(), MavericksView 
     ) {
         val tag = this@VectorBaseFragment::class.simpleName.toString()
         lifecycleScope.launch {
-            repeatOnLifecycle(Lifecycle.State.RESUMED) {
+            repeatOnLifecycle(Lifecycle.State.CREATED) {
                 viewEvents
                         .stream(tag)
                         .collect {
